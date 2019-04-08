@@ -5,78 +5,7 @@
 <head>
 <?php include 'inc/head.php'; ?>
     <style>
-            .stage-wrap > li {
-            position: relative !important;
-            width: 100% !important;
-            min-height: 94px !important;
-            box-shadow: inset 0 0 0 #b9b9b9 !important;
-            border-radius: 4px !important;
-            border: 1px dashed #c1c1c1 !important;
-            background-color: white !important;
-            margin-bottom: 4px;
-            float: left !important;
-            padding-top: 20px !important;
-        }
-
-            .stage-wrap > li:hover {
-                border: 1px dashed #818181 !important;
-            }
-
-        div.control-tools {
-            width: 45px !important;
-            position: absolute;
-            border: 1px dashed #c1c1c1;
-            top: 0px;
-            right: 0px;
-            border-top: 0px;
-            border-right: 0px;
-            border-bottom-left-radius: 4px;
-        }
-
-            div.control-tools .icon {
-                width: 22px;
-                float: left;
-                font-size: 12px;
-                padding: 1px 2px;
-                color: #5c5c5c;
-            }
-
-        .fb-column {
-            border: 1px dashed #bbbaba;
-            min-height: 150px;
-            border-radius: 3px;
-            padding: 30px 10px 10px 10px;
-        }
-
-        .fb-element-wrap {
-            border: 1px dashed #c9c4c4;
-            padding: 25px 8px 8px 8px;
-            border-radius: 3px;
-            margin-bottom: 10px;
-            position: relative;
-        }
-
-            .fb-element-wrap:last-child {
-                margin-bottom: 0px;
-            }
-
-        .fb-popup {
-            width: 565px;
-            height: 400px;
-            background-color: #F5F5F5;
-            /* position: absolute;
-            right: -1px;
-            top: -1px; */
-            z-index: 9999;
-            border-radius: 3px;
-            display: none;
-            border: 1px solid #D6D6D6;
-            box-shadow: 0px 0 10px rgba(32,43,43,0.3);
-        }
-
-            .fb-popup.show {
-                display: block;
-            }
+            
     </style>
 </head>
 
@@ -319,6 +248,77 @@
                                     <a class="icon text-center" data-fb-close-popup=".fb-popup" href="javascript:void(0)"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 </div>
                                 <div class="setting-wrap">
+
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                <h5 class="card-header-item mb-0 d-flex " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <span class="accordion-indicator mr-3">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <span class="accordion-hdtext"> General Setting</span>
+                                                   
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                <form>
+                                                    <div class="form-row">
+                                                            <div class="form-group col-lg-6">
+                                                                <label for="inputFieldName">Field Name:</label>
+                                                                <input type="text" class="form-control" id="inputFieldName"
+                                                                >
+                                                            </div>
+                                                            <div class="form-group col-lg-6">
+                                                                <label for="selectSubType">Sub Type</label>
+                                                                <select id="selectSubType" class="form-control">
+                                                                    <option selected></option>
+                                                                    <option>...</option>
+                                                                </select>
+                                                            </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                            <div class="form-group col-lg-6">
+                                                                <label for="selectDataType">Data Type</label>
+                                                                <select id="selectDataType" class="form-control">
+                                                                    <option selected></option>
+                                                                    <option>...</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group col-lg-6">
+                                                                <label for="radioTemplate">Yes/No Radio Template:</label>
+                                                                <div class="">
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio" name="inlineRadio" id="inlineYes" value="Yes>
+                                                                        <label class="form-check-label" for="inlineYes">Yes</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio" name="inlineRadio" id="inlineNo" value="option2">
+                                                                        <label class="form-check-label" for="inlineNo">No</label></div>
+                                                                    </div>
+                                                                </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-lg-6"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            &nbsp;
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Check me out
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                            </form>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                              </div>
                     </div>

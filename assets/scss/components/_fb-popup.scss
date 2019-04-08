@@ -1,0 +1,97 @@
+.stage-wrap > li {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 94px !important;
+    box-shadow: inset 0 0 0 #b9b9b9 !important;
+    border-radius: 4px !important;
+    border: 1px dashed #c1c1c1 !important;
+    background-color: white !important;
+    margin-bottom: 4px;
+    float: left !important;
+    padding-top: 20px !important;
+}
+
+    .stage-wrap > li:hover {
+        border: 1px dashed #818181 !important;
+    }
+
+div.control-tools {
+    width: 45px !important;
+    position: absolute;
+    border: 1px dashed #c1c1c1;
+    top: 0px;
+    right: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom-left-radius: 4px;
+}
+
+    div.control-tools .icon {
+        width: 22px;
+        float: left;
+        font-size: 12px;
+        padding: 1px 2px;
+        color: #5c5c5c;
+    }
+
+.fb-column {
+    border: 1px dashed #bbbaba;
+    min-height: 150px;
+    border-radius: 3px;
+    padding: 30px 10px 10px 10px;
+}
+
+.fb-element-wrap {
+    border: 1px dashed #c9c4c4;
+    padding: 25px 8px 8px 8px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+    .fb-element-wrap:last-child {
+        margin-bottom: 0px;
+    }
+
+.fb-popup {
+    width: 565px;
+    height: 400px;
+    background-color: #F5F5F5;
+    /* position: absolute;
+    right: -1px;
+    top: -1px; */
+    z-index: 9999;
+    border-radius: 3px;
+    display: none;
+    border: 1px solid #D6D6D6;
+    box-shadow: 0px 0 10px rgba(32,43,43,0.3);
+}
+
+    .fb-popup.show {
+        display: block;
+    }
+
+
+
+    // ********fb-popup***** 
+
+    .fb-popup{
+        padding: 1rem;
+        .setting-wrap {
+            padding: 1rem;
+            .card{
+                border:1px solid #DDDDDD !important;
+                
+                &-header{
+                    background-color: #F5F5F5;
+
+                    &-item{
+                        font-size:16px;
+                        color:#707070;
+                        padding: 1rem;
+                    }
+                }
+
+            }
+        }
+    }

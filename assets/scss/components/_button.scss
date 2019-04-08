@@ -1,0 +1,44 @@
+.btn {
+    font-size: $font-normal;
+    &-primary {
+        background-color: theme(button, primary);
+        border-color: theme(button, primary);
+    } 
+    
+    // group
+    &-group {
+        &-lg>.btn {
+            font-size: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        &-md>.btn {
+            font-size: 1.6rem;
+            padding: 0.7rem 1.5rem;
+            
+        }
+    } 
+    
+    // size
+    &-lg {
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    &-md {
+        font-size: 1.6rem;
+        padding: 0.7rem 1.5rem;        
+    } 
+    
+    // roundness
+    &-rounded {
+        border-radius: 25px;
+    }
+
+    // fly
+    &-fly-r {
+        position: absolute;
+        top:0px;
+        right: 20px;
+    }
+}

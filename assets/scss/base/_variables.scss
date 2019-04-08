@@ -1,0 +1,42 @@
+// typo
+$font-base: 62.5%;
+$font-normal: 1.4rem;
+
+//////heading
+$h1: 3.4rem;
+$h2: 2.8rem;
+$h3: 2.4rem;
+$h4: 2.0rem;
+$h5: 1.8rem;
+$h6: 1.6rem;
+
+
+// font family
+$font-heading:  "Open Sans", Arial, sans-serif;
+
+$font-body:
+// Safari for OS X and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for OS X (San Francisco)
+BlinkMacSystemFont,
+// Basic web fallback
+"PT Sans", Arial, sans-serif,
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+// dropdown
+$dropdown-lg: 340px;
+$dropdown-md: 300px;
+$dropdown-sm: 240px;
+
+$link: blue;
+
+// colors
+$black: #000;
+$white: #fff;
+$blue: #3097EF;
+$red: #F36965;
+$green: #0ACC8F;
+$neon: #47DEEF;
+$yellow: #F2BB3A;
+$light-blue: #EDF6FA;

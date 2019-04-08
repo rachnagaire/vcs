@@ -1,0 +1,53 @@
+.nav-tabs.nav-tabs-custom {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+
+    .nav-link {
+        border: none;
+        position: relative;
+        color: theme(text, dark);
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: transparent;
+        }
+    }
+
+    .nav-link:hover {
+        border: none;
+
+        &:before {
+            background: theme(accent, primary);
+        }
+    }
+
+    .nav-link.active {
+        border: none;
+        color: theme(text, link-color);
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: theme(accent, primary);
+        }
+    }
+
+    .nav-item.show {
+        .nav-link {
+            &:before {
+                background: theme(accent, primary);
+            }
+        }
+    }
+}

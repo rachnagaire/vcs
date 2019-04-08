@@ -1,0 +1,176 @@
+.panel {
+    background: $light-blue;
+
+ 
+}
+
+.color-pick {
+    .dropdown-toggle {
+        display: block;
+        height: 30px;
+        @include media('>tablet') {
+            width: 30px !important;
+        }
+        background: #9AFAC1;
+        border: none;
+        transition: all 0.3s ease;
+        background: -webkit-linear-gradient(top left, #EF2E2E, #EE68E9, #463CD6);
+        background: -moz-linear-gradient(top left, #EF2E2E, #EE68E9, #463CD6);
+        background: linear-gradient(top left, #EF2E2E, #EE68E9, #463CD6);
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .dropdown {
+        &-menu {
+            width: 142px;
+            height: 142px;
+            padding: 5px;
+            background: #f2f2f2;
+        }
+
+        &-item {
+            padding: 0;
+            width: auto;
+            clear: initial;
+            display: block;
+            border: 1px solid #fff;
+            float: left;
+            transition: all 0.3s ease;
+            &:hover {
+                border-color:#fff;
+            }
+        
+        }
+    }
+    .dropdown-item.active, .dropdown-item:active {
+        background-color: transparent;
+    }
+    .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+        border: none;
+        background: -webkit-linear-gradient(top left, #EF2E2E, #EE68E9, #463CD6);
+        background: -moz-linear-gradient(top left, #EF2E2E, #EE68E9, #463CD6);
+        background: linear-gradient(top left, #EF2E2E, #EE68E9, #463CD6);
+    }
+}
+
+.color {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    cursor: pointer;
+
+
+    &.berryred {
+        background: #EF3A53;
+    }
+
+    &.blue {
+        background: #44A4F8;
+    }
+
+    &.neon {
+        background: #3BD593;
+    }
+
+    &.dullpurple {
+        background: #CF92DE;
+    }
+
+    &.brightred {
+        background: #FF6D4F;
+    }
+
+
+
+    &.yellow {
+        background: #FFB636;
+    }
+
+    &.gold {
+        background: #A88240;
+    }
+
+    &.pink {
+        background: #F66DAD;
+    }
+
+    &.darkblue {
+        background: #0C9CBA;
+    }
+
+    &.green {
+        background: #93D549;
+    }
+
+
+
+
+    &.purlple {
+        background: #9869E8;
+    }
+
+    &.grey {
+        background: #68655F;
+    }
+
+    &.darkestblue {
+        background: #3C598B;
+    }
+
+    &.darkgreen {
+        background: #5E8B3C;
+    }
+
+    &.lightpink {
+        background: #FB85F7;
+    }
+
+
+
+
+    &.brown {
+        background: #8B5E3C;
+    }
+
+    &.satpurple {
+        background: #5D44C2;
+    }
+
+    &.lightblue {
+        background: #13BDF2;
+    }
+
+    &.dullgreen {
+        background: #9AA591;
+    }
+
+    &.orange {
+        background: #F97F22;
+    }
+
+
+
+    &.black {
+        background: #000000;
+    }
+
+    &.grey70 {
+        background: #6D6E71;
+    }
+
+    &.grey40 {
+        background: #A7A9AC;
+    }
+
+    &.grey10 {
+        background: #E6E7E8;
+    }
+
+    &.white {
+        background: #ffffff;
+    }
+}

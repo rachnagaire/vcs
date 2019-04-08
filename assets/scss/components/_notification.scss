@@ -1,0 +1,84 @@
+.notification {
+    &-head {
+        padding: 8px 16px;
+
+        a {
+            color: theme(text,link-dark);
+        }
+    }
+
+    &-badge {
+        position: absolute;
+        top: -7px;
+        right: 5px;
+        min-width: 14px;
+        max-width: 50px;
+        font-size: 11px;
+        background: $red;
+        color: #fff;
+        display: block;
+        text-align: center;
+        padding: 1px 3px;
+        border-radius: 25px;
+    }
+
+    &-body {
+        .notification-item {
+            display: inline-block;
+
+            &:hover {
+                text-decoration: none;
+                background: theme(hover-bg, light);
+            }
+        }
+    }
+
+    &-msg {
+        margin-left: auto;
+
+        @include media('>tablet') {
+            margin-left: initial;
+        }
+
+        a {
+            display: inline-block;
+            color: theme(text,link-dark);
+
+            &:hover {
+                text-decoration: none;
+                background: theme(hover-bg, light);
+            }
+        }
+    }
+
+    &-foot {
+        padding: 8px 16px;
+        border-top: 1px solid theme(border, light);
+    }
+
+    .media {
+        padding: 10px 16px;
+
+        &-img {
+            margin-right: 8px;
+            margin-top: 3px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .circle {
+            border-radius: 50%;
+            height: 38px;
+            width: 38px;
+            overflow: hidden;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.table-custom {
+    tr {
+        &:hover {
+            background-color: #f3f5f6!important;
+        }
+
+        &:first-child {
+            td {
+                border: none;
+            }
+        }
+
+        td {
+            vertical-align: middle;
+            padding: 1rem 0.7rem;
+        }
+    }
+
+    thead {
+        th {
+            border-top: none;
+            border-bottom: 1px solid #d4d4d4;
+        }
+    }
+}
+
+.table-lg {
+    thead {
+        th {
+            &:first-child {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+            }
+        }
+    }
+
+    tr {
+        td {
+            &:first-child {
+                padding: 1.4rem 1.6rem;
+            }
+        }
+    }
+}
+
+.table-hover {
+    tbody {
+        tr:hover {
+            background-color: #EBEFF2;
+        }
+    }
+}
+
+.table-noheading {
+    .table-noheading {
+        tr:first-child {
+            td {
+                border-top: none;
+            }
+        }
+    }
+
+    .td-controls {
+        max-width: 75px;
+
+        a {
+            color: theme(icon, dark);
+
+            &:hover {
+                color: theme(text, link-color);
+            }
+        }
+
+        > a {
+            padding: 0 1rem;
+            margin: 0 0.5rem;
+        }
+
+        .dropdown {
+            padding: 0 1rem;
+            margin: 0 0.5rem;
+        }
+
+        .dropdown-toggle {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    // pagination
+    .page-link {
+        padding: .7rem 1rem;
+    }
+    // data table
+    .dataTables_length {
+        padding: 0.3rem 0;
+
+        .custom-select {
+            padding: 0.5rem 1.5rem !important;
+        }
+    }
+
+    .dataTables_filter, .dataTables_info, .dataTables_paginate {
+        padding: 1.3rem 0rem;
+    }
+}

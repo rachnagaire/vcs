@@ -1,0 +1,42 @@
+/*!
+Theme Name: Vesuvio Admin Template
+Theme URL: 
+Author: Niraj Shakya
+Author URI: www.nirajshakya.com
+Description: 
+Version: 1.0.0 
+Text Domain: Vesuvio Admin Template
+Tags: vesuvio, admin 
+Company site: wwww.vesuviois.com
+*/
+
+@import 'vendor/include-media';
+@import 'base/variables';
+@import 'theme/default';
+@import 'base/general';
+@import 'base/typo';
+@import 'base/utility';
+@import 'components/nav';
+@import 'components/form';
+@import 'components/accordion';
+@import 'components/dropdown';
+@import 'components/button';
+@import 'components/search';
+@import 'components/notification';
+@import 'components/quickstats';
+@import 'components/table';
+@import 'components/list';
+@import 'components/form-userinput';
+@import 'components/tabs';
+@import 'components/modal';
+@import 'components/sticky';
+@import 'components/panel';
+@import 'components/form-builder';
+@import 'components/widget';
+@import 'components/messages';
+@import 'layout/main-aside';
+@import 'layout/main-layout';
+@import 'pages/emptystate';
+@import 'pages/profile';
+@import 'pages/timeline';
+@import 'components/media-upload';

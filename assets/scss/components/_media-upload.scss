@@ -1,0 +1,23 @@
+.media-upload{
+    &-wrapper {
+        .modal-body {
+            padding: 1rem;
+        }
+    }
+    &-accordion{
+        .card{
+            margin-bottom: 15px;
+            border:1px solid #dee2e6 !important;
+            &,&:last-child{
+                border-bottom: 1px solid #dee2e6 !important;
+            }
+            &-header{
+                border-bottom: 1px solid #dee2e6 !important;
+                background-color: #f2f2f2;
+            }
+            &-header-item{
+                padding: 1rem;
+            }
+        }
+    }
+}

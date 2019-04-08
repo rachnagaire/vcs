@@ -1,0 +1,60 @@
+.bg-dark {
+    background: theme(bg, dark) !important;
+}
+
+.sidebar {
+    @include media('>=tablet') {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        width: 250px;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+    }
+
+    .slimScrollDiv {
+        height: auto !important;
+
+        @include media('>=tablet') {
+            height: 100vh !important;
+        }
+    }
+}
+.sidebar-sticky {
+    height: auto !important;
+
+    @include media('>=tablet') {
+        position: fixed;
+        top: 0;
+        width: 250px !important;
+        height: 100vh !important;
+        padding-top: .5rem;
+        /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    &.bg-dark {
+        @include media('>=tablet') {
+            background: transparent;
+        }
+    }
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    // .sidebar-sticky {
+    //     @include media('>=tablet') {
+    //         position: -webkit-sticky;
+    //         position: sticky;
+    //     }
+    // }
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    text-transform: uppercase;
+}

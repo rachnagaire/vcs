@@ -1,0 +1,14 @@
+%modal-padd{
+    padding: 1.4rem 2.4rem;
+}
+.modal {
+    &-header {
+        @extend %modal-padd;
+    }
+    &-body {
+        @extend %modal-padd;
+    }
+    &-footer {
+        @extend %modal-padd;
+    }
+}

@@ -265,58 +265,254 @@
 
                                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                                 <div class="card-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                            <div class="form-group col-lg-6">
-                                                                <label for="inputFieldName">Field Name:</label>
-                                                                <input type="text" class="form-control" id="inputFieldName"
-                                                                >
-                                                            </div>
-                                                            <div class="form-group col-lg-6">
-                                                                <label for="selectSubType">Sub Type</label>
-                                                                <select id="selectSubType" class="form-control">
-                                                                    <option selected></option>
-                                                                    <option>...</option>
-                                                                </select>
-                                                            </div>
-                                                    </div>
-                                                    <div class="form-row">
-                                                            <div class="form-group col-lg-6">
-                                                                <label for="selectDataType">Data Type</label>
-                                                                <select id="selectDataType" class="form-control">
-                                                                    <option selected></option>
-                                                                    <option>...</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="form-group col-lg-6">
-                                                                <label for="radioTemplate">Yes/No Radio Template:</label>
-                                                                <div class="">
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio" name="inlineRadio" id="inlineYes" value="Yes>
-                                                                        <label class="form-check-label" for="inlineYes">Yes</label>
+                                                    <form>
+                                                        <div class="form-row">
+                                                                <div class="form-group col-lg-6">
+                                                                    <label for="inputFieldName">Field Name:</label>
+                                                                    <input type="text" class="form-control" id="inputFieldName"
+                                                                    >
+                                                                </div>
+                                                                <div class="form-group col-lg-6">
+                                                                    <label for="selectSubType">Sub Type</label>
+                                                                    <select id="selectSubType" class="form-control">
+                                                                        <option selected></option>
+                                                                        <option>...</option>
+                                                                    </select>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                                <div class="form-group col-lg-6">
+                                                                    <label for="selectDataType">Data Type:</label>
+                                                                    <select id="selectDataType" class="form-control">
+                                                                        <option selected></option>
+                                                                        <option>...</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-lg-6">
+                                                                    <label for="radioTemplate">Yes/No Radio Template:</label>
+                                                                    <div class="">
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="inlineRadio" id="inlineYes" value="Yes">
+                                                                            <label class="form-check-label" for="inlineYes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="inlineRadio" id="inlineNo" value="option2">
+                                                                            <label class="form-check-label" for="inlineNo">No</label></div>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio" name="inlineRadio" id="inlineNo" value="option2">
-                                                                        <label class="form-check-label" for="inlineNo">No</label></div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-lg-6">
+                                                                <label for="options">Options:</label>
+                                                                <table class=" table table-bordered w-100 custom-optiontable">
+                                                                    <tbody>
+                                                                        <tr >
+                                                                            <td colspan="1" class="text-center "><i class="fas fa-arrows-alt"></i></td>
+                                                                            <td colspan="2"class="text-center w-50"></td>
+                                                                            <td colspan="2" class="text-center w-50"></td>
+                                                                            <td colspan="1" class="text-center "><input type="radio" name="" aria-label="Radio button for following text input"></td>
+                                                                        </tr>
+                                                                        <tr >
+                                                                            <td colspan="1" class="text-center "><i class="fas fa-arrows-alt"></i></td>
+                                                                            <td colspan="2"class="text-center w-50"></td>
+                                                                            <td colspan="2" class="text-center w-50"></td>
+                                                                            <td colspan="1" class="text-center "><input type="radio" aria-label="Radio button for following text input"></td>
+                                                                        </tr>
+                                                                        <tr >
+                                                                            <td colspan="1" class="text-center "><i class="fas fa-arrows-alt"></i></td>
+                                                                            <td colspan="2"class="text-center w-50"></td>
+                                                                            <td colspan="2" class="text-center w-50"></td>
+                                                                            <td colspan="1" class="text-center "><input type="radio" aria-label="Radio button for following text input"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="form-group col-lg-6">
+                                                                <label for="checkboxTemplate">Checkbox Template:</label>
+                                                                <div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" id="checkbox1">
+                                                                        &nbsp;
+                                                                        <label class="form-check-label" for="checkbox1">
+                                                                            Checkbox 1
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" id="checkbox2">
+                                                                        &nbsp;
+                                                                        <label class="form-check-label" for="checkbox2">
+                                                                            Checkbox 2
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" id="checkbox3">
+                                                                        &nbsp;
+                                                                        <label class="form-check-label" for="checkbox3">
+                                                                            Checbox 3
+                                                                        </label>
                                                                     </div>
                                                                 </div>
-                                                    </div>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-lg-6"></div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                            &nbsp;
-                                                            <label class="form-check-label" for="gridCheck">
-                                                                Check me out
-                                                            </label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                            </form>                                                   
+                                                        <div class="form-row">
+                                                            <div class="form-group col-lg-6">
+                                                                <button class="btn btn-primary btn-sm float-right">
+                                                                    <i class="fas fa-plus"></i>
+                                                                     Add Row
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>                                                   
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <h5 class="card-header-item mb-0 d-flex  collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    <span class="accordion-indicator mr-3">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <span class="accordion-hdtext"> Advance Setting </span>
+                                                    
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <label for="fieldPermissionTable" class="w-100 pb-2 border-bottom">Field Permission Setting</label>
+                                                    <table class="table table-hover table-bordered table-fieldpermission">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th>Role Name</th>
+                                                                <th>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                        <label class="form-check-label" for="defaultCheck1">
+                                                                            &nbsp; Read 
+                                                                        </label>
+                                                                    </div>
+
+                                                                </th>
+                                                                <th>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                                        <label class="form-check-label" for="defaultCheck2">
+                                                                            &nbsp; Write
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> Tenant Adminstrator</td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="tenentRead">
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="tenantWrite">
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Case Manager</td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="caseManagerRead">
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="caseManagerRead">
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Tenant Adminstrator</td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Tenant Adminstrator</td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <small class="form-text text-muted font-italic">
+                                                            <span class="font-weight-bold">Note</span> You can control Read/Write access by using advance features.
+                                                    </small>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingThree">
+                                                <h5 class="card-header-item mb-0 d-flex  collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    <span class="accordion-indicator mr-3">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <span class="accordion-hdtext"> Field Validation </span>
+                                                    
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingFour">
+                                                <h5 class="card-header-item mb-0 d-flex  collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseFour">
+                                                    <span class="accordion-indicator mr-3">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                    <span class="accordion-hdtext"> Field Validation </span>
+                                                    
+                                                </h5>
+                                            </div>
+                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         
                                     </div>
                                 </div>

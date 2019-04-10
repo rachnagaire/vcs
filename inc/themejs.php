@@ -24,7 +24,12 @@
                 size: '5px',
                 alwaysVisible: false
             });
-          
+            
+            $('#popup-scroll').slimScroll({
+                height: '250px',
+                size: '5px',
+                alwaysVisible: false
+            });
         });
         // submenu
         $('.sidelist').on('click', function (event) {

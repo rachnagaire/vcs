@@ -55,7 +55,7 @@ div.control-tools {
 
 .fb-popup {
     width: 565px;
-    height: 400px;
+    height: auto;
     background-color: #F5F5F5;
     /* position: absolute;
     right: -1px;
@@ -76,6 +76,7 @@ div.control-tools {
     // ********fb-popup***** 
 
     .fb-popup{
+        position: relative;
         padding: 1rem;
         .setting-wrap {
             padding: 1rem;
@@ -135,4 +136,34 @@ div.control-tools {
             color:#A2A2A2;
             padding: 0.50rem 1rem;
         }
+    }
+    .field-validation-wrapper{
+        margin-bottom: 10px;
+        position: relative;
+        padding:0 .825rem;
+        border: 1px solid #ccc;
+        background-color:#fafafaa8;
+        .field-controller{
+            background-color:#F4F4F4;
+            padding: .5rem;
+            position: absolute;
+            top:0;
+            right:0;
+            .icon {
+                padding: 10px;
+            }
+        }
+        
+        .form{
+            &-row{
+                margin: 10px 0;
+            }
+        }
+    }
+    .btn-invalid{
+        font-weight: bold;
+        font-size: 16px;
+        border-radius:3px;
+        background-color: #FF8484;
+        color: #fff;
     }

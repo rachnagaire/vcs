@@ -359,7 +359,7 @@
                                                                 </div>
                                                                 <div class="form-row">
                                                                     <div class="form-group col-lg-6">
-                                                                        <button class="btn btn-primary btn-sm float-right">
+                                                                        <button class="btn btn-primary btn-sm float-right  btn-rounded px-3">
                                                                             <i class="fas fa-plus"></i>
                                                                             Add Row
                                                                         </button>
